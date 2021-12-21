@@ -315,6 +315,10 @@ body {
     flex-wrap: wrap;
 }
 
+.featured_item_img{
+    display: block;
+}
+
 .featured_listing {
     display: flex;
     flex-direction: row;
@@ -331,7 +335,7 @@ body {
     box-sizing: border-box;
     display: inline-block;
     letter-spacing: normal;
-    margin: 0 0 4px 4px;
+    margin: 0 0 4px 0;
     vertical-align: top;
 }
 
@@ -351,6 +355,7 @@ body {
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
+    margin-top: 25px;
 }
 
 .featured_price {
@@ -612,3 +617,95 @@ body {
     line-height: 17px;
     color: #f16d7f;
 }
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.filter_sort{
+    display: flex;
+    flex-grow: 1;
+}
+
+.filter_txt{
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.sort_txt{
+    font-weight: 600;
+    color: black;
+}
+
+.filter_sort_icon{
+    height: 10px;
+    width: 15px;
+    margin: 13px auto auto 10px;
+    padding: 0;
+}
+
+.filter_category{
+    flex-grow: 2;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+
+.filter_category_item{
+    margin-left: 48px;
+}
+
+.filter_category_item a{
+    text-decoration: none;
+    color:#6f6e6e;
+    font-weight: 300;
+}
+
+.filter_category_item_angle{
+    color:#6f6e6e;
+    display: inline;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.pagination{
+    margin: 19px auto 97px auto;
+    height: 43px;
+    width: 283px;
+    border: 1px solid #ebebeb;
+    display: flex;
+    padding: 13px 16px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.featured_item_page {
+    list-style: none;
+    display: flex;
+    padding-left: 17px;
+}
+
+.featured_item_page_number{
+    margin-right: 20px;
+}
+
+.page_number{
+    text-decoration: none;
+    color: #ebebeb;
+}
+
+.page_number_active{
+    text-decoration: none;
+    color: #ef5b70;
+}
+
+.featured_item_page_dots{
+    color: #ebebeb;
+    margin: 0;
+}
+
