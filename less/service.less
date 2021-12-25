@@ -1,0 +1,39 @@
+@import "_variables.less";
+
+.service {
+  width: 100%;
+  background-color: @dark-background-4;
+
+  &_information {
+    display: flex;
+
+    &_item {
+      flex-grow: 1;
+      margin: 104px 0;
+
+      &:nth-child(2) {
+        margin: 104px 30px;
+      }
+
+      & svg {
+        .img-state(32px, 45px);
+        fill: @color-item;
+        margin: 0 auto;
+      }
+    }
+
+    &_header {
+      .font-style(20px, 600, @line-height: 24px);
+      color: @service-txt;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    &_description {
+      .font-style(14px, 300, @line-height: 17px);
+      text-align: center;
+      color: @service-txt;
+    }
+  }
+}
+

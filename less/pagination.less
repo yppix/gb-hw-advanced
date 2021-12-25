@@ -1,0 +1,39 @@
+@import "_variables.less";
+
+.pagination {
+  margin: 19px auto 97px auto;
+  .img-state(43px, 283px, flex);
+  border: 1px solid @pagination-color;
+  padding: 13px 16px;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.featured_item_page {
+  list-style: none;
+  display: flex;
+  padding-left: 17px;
+
+  &_number {
+    margin-right: 20px;
+  }
+
+  &_dots {
+    color: @pagination-color;
+    margin: 0;
+  }
+}
+
+.page_number {
+  text-decoration: none;
+  color: @pagination-color;
+
+  &_active {
+    text-decoration: none;
+    color: @pagination-color-active;
+  }
+}
+
+
+

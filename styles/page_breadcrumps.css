@@ -1,0 +1,43 @@
+.page_breadcrumps {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #f8f3f4;
+}
+.page_breadcrumps_header {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 29px;
+  color: #f16d7f;
+  text-transform: uppercase;
+}
+.page_breadcrumps_row {
+  display: flex;
+}
+.page_breadcrumps_list {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+.page_breadcrumps_item::after {
+  content: '\00A0/\00A0';
+}
+.page_breadcrumps_item:last-of-type::after {
+  content: '';
+}
+.breadcrump {
+  text-decoration: none;
+  color: #636363;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+.active {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 17px;
+  color: #f16d7f;
+}

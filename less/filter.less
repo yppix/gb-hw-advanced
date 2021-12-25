@@ -1,0 +1,142 @@
+@import "_variables.less";
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+
+  &_sort {
+    display: flex;
+    flex-grow: 1;
+
+    &:hover {
+      fill: @pagination-color-active;
+    }
+
+    &:hover > .filter_txt {
+      color: @pagination-color-active;
+    }
+
+    &:hover > .subfilter {
+      display: block;
+    }
+  }
+
+  &_txt {
+    text-transform: uppercase;
+    .font-style(14px, normal,@line-height: 17px);
+  }
+
+  &_sort_icon {
+    .img-state-aft(10px, 15px);
+    margin: 13px auto auto 10px;
+    padding: 0;
+  }
+
+  &_category {
+    flex-grow: 2;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+
+    &_item {
+      margin-left: 48px;
+
+      & a {
+        text-decoration: none;
+        color: @a-color;
+        font-weight: 300;
+      }
+
+      &_angle {
+        color: @filter-item-angle;
+        display: inline;
+        margin-left: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.sort_txt {
+  font-weight: 600;
+  color: black;
+}
+
+.subfilter {
+  display: none;
+  background-color: white;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  position: absolute;
+  width: 360px;
+  box-sizing: content-box;
+  padding-right: 15px;
+
+  &_info {
+    display: flex;
+    margin-left: 16px;
+    margin-bottom: 16px;
+
+    &_txt {
+      .font-style(14px, 600, @line-height: 17px);
+      color: @pagination-color-active;
+      text-transform: uppercase;
+    }
+
+    &_sort_icon {
+      .img-state-aft(10px, 15px);
+      margin: 13px auto auto 10px;
+      padding: 0;
+    }
+  }
+
+  &_first_row {
+    list-style: none;
+
+    &_item {
+      text-transform: uppercase;
+      color: @filter-hover-txt;
+      margin-top: 18px;
+
+      & span {
+        border-left: 5px solid @pagination-color-active;
+        border-bottom: 1px solid @pagination-color;
+        padding-left: 11px;
+        padding-bottom: 11px;
+        display: block;
+      }
+
+    }
+  }
+
+  &_second_row {
+    list-style: none;
+    margin: 24px 0;
+
+    &_item {
+      text-transform: capitalize;
+      color: @filter-hover-txt;
+      margin-bottom: 11px;
+    }
+  }
+}
+
+
+.submenu:hover > .category_size {
+  display: block;
+}
+
+.category_size {
+  display: none;
+  list-style: none;
+  background-color: white;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  position: absolute;
+  box-sizing: border-box;
+  padding: 7px 30px;
+
+  & li {
+    margin: 0 auto;
+  }
+}
+

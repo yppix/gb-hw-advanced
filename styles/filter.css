@@ -1,0 +1,122 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.filter_sort {
+  display: flex;
+  flex-grow: 1;
+}
+.filter_sort:hover {
+  fill: #ef5b70;
+}
+.filter_sort:hover > .filter_txt {
+  color: #ef5b70;
+}
+.filter_sort:hover > .subfilter {
+  display: block;
+}
+.filter_txt {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 17px;
+}
+.filter_sort_icon {
+  height: 10px;
+  width: 15px;
+  margin: 13px auto auto 10px;
+  padding: 0;
+}
+.filter_category {
+  flex-grow: 2;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+.filter_category_item {
+  margin-left: 48px;
+}
+.filter_category_item a {
+  text-decoration: none;
+  color: #6f6e6e;
+  font-weight: 300;
+}
+.filter_category_item_angle {
+  color: #6f6e6e;
+  display: inline;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.sort_txt {
+  font-weight: 600;
+  color: black;
+}
+.subfilter {
+  display: none;
+  background-color: white;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  position: absolute;
+  width: 360px;
+  box-sizing: content-box;
+  padding-right: 15px;
+}
+.subfilter_info {
+  display: flex;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+.subfilter_info_txt {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 17px;
+  color: #ef5b70;
+  text-transform: uppercase;
+}
+.subfilter_info_sort_icon {
+  height: 10px;
+  width: 15px;
+  margin: 13px auto auto 10px;
+  padding: 0;
+}
+.subfilter_first_row {
+  list-style: none;
+}
+.subfilter_first_row_item {
+  text-transform: uppercase;
+  color: #6f6e6e;
+  margin-top: 18px;
+}
+.subfilter_first_row_item span {
+  border-left: 5px solid #ef5b70;
+  border-bottom: 1px solid #ebebeb;
+  padding-left: 11px;
+  padding-bottom: 11px;
+  display: block;
+}
+.subfilter_second_row {
+  list-style: none;
+  margin: 24px 0;
+}
+.subfilter_second_row_item {
+  text-transform: capitalize;
+  color: #6f6e6e;
+  margin-bottom: 11px;
+}
+.submenu:hover > .category_size {
+  display: block;
+}
+.category_size {
+  display: none;
+  list-style: none;
+  background-color: white;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  position: absolute;
+  box-sizing: border-box;
+  padding: 7px 30px;
+}
+.category_size li {
+  margin: 0 auto;
+}
