@@ -28,6 +28,25 @@
 
   &_item_img {
     display: block;
+
+    &:hover {
+      animation-duration: 2s;
+      animation-name: zoomAnim;
+    }
+  }
+
+  @keyframes zoomAnim {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+
+    100% {
+      transform: scale(1);
+    }
   }
 
   &_listing {
@@ -78,9 +97,13 @@
     background-color: white;
     max-width: 211px;
     margin: 0 auto;
+    transition: width 2s, height 2s, background-color 2s;
+
 
     &:hover {
       color: white;
+      width: 300px;
+      height: 75px;
       border-color: @featured-border;
       background-color: @featured-border;
     }

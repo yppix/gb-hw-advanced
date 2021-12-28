@@ -15,6 +15,11 @@
         margin: 104px 30px;
       }
 
+      &:hover svg{
+        animation-duration: 0.5s;
+        animation-name: rotateServ;
+      }
+
       & svg {
         .img-state(32px, 45px);
         fill: @color-item;
@@ -37,3 +42,28 @@
   }
 }
 
+@keyframes rotateServ {
+  0% {
+    transform: rotate(-45deg);
+  }
+
+  25% {
+    transform: rotate(-85deg);
+  }
+
+  50% {
+    transform: rotate(-135deg);
+  }
+
+  75% {
+    transform: rotate(-225deg);
+  }
+
+  90% {
+    transform: rotate(-300deg);
+  }
+
+  100% {
+    transform: rotate(-330deg);
+  }
+}
