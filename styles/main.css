@@ -736,6 +736,7 @@ body {
   line-height: 17px;
   color: #f16d7f;
   margin-bottom: 27px;
+  text-transform: uppercase;
 }
 .product_description_card_subtitle:after {
   content: "";
@@ -751,6 +752,7 @@ body {
   line-height: 22px;
   color: #4d4d4d;
   margin-bottom: 48px;
+  text-transform: uppercase;
 }
 .product_description_card_txt {
   font-size: 14px;
