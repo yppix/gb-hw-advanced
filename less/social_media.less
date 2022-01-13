@@ -1,0 +1,53 @@
+@import "_variables.less";
+
+.social_media {
+  width: 100%;
+  background-color: @dark-background-4;
+  padding: 30px 0;
+
+  &_row {
+    display: flex;
+  }
+
+  &_list {
+    list-style: none;
+    margin-right: auto;
+    display: flex;
+  }
+
+  &_item {
+    background-color: white;
+    .img-state(32px, 32px);
+    background-position: center;
+    margin-left: 8px;
+  }
+}
+
+.social_media_row {
+  display: flex;
+}
+
+.all_rights_received {
+  color: white;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  width: 100%;
+}
+
+.fb {
+  .social-media-icons(url("/img/fb.png"));
+}
+
+.ig {
+  .social-media-icons(url("/img/ig.png"));
+}
+
+.pintr {
+  .social-media-icons(url("/img/pintr.png"));
+}
+
+.twit {
+  .social-media-icons(url("/img/twit.png"));
+}

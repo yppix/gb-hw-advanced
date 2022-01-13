@@ -1,0 +1,50 @@
+@import "_variables.less";
+
+.brand {
+  width: 100%;
+  background-color: @brand-background-color;
+  background-image: url("/img/man.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  &-wrp {
+    min-height: @brand-background-height;
+    .img-state(100%, 100%, flex);
+    align-items: center;
+  }
+
+  &_description {
+    margin-left: @brand-description-margin;
+
+    &_title_wrp {
+      margin: 0 0 0 50px;
+      text-transform: uppercase;
+      position: relative;
+
+      &::before {
+        content: " ";
+        .img-state(92px, 12px);
+        background-color: @color-item;
+        position: absolute;
+        top: -1px;
+        left: -28px;
+      }
+    }
+
+    &_title {
+      margin: 0;
+      .font-style(48px, 900, @line-height:58px);
+      font-family: @font-family;
+    }
+
+    &_subtitle {
+      margin: 0;
+      .font-style(32px, 700, @line-height:38px);
+
+      & span {
+        color: @color-item;
+      }
+    }
+
+  }
+}

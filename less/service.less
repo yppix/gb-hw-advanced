@@ -1,0 +1,69 @@
+@import "_variables.less";
+
+.service {
+  width: 100%;
+  background-color: @dark-background-4;
+
+  &_information {
+    display: flex;
+
+    &_item {
+      flex-grow: 1;
+      margin: 104px 0;
+
+      &:nth-child(2) {
+        margin: 104px 30px;
+      }
+
+      &:hover svg{
+        animation-duration: 0.5s;
+        animation-name: rotateServ;
+      }
+
+      & svg {
+        .img-state(32px, 45px);
+        fill: @color-item;
+        margin: 0 auto;
+      }
+    }
+
+    &_header {
+      .font-style(20px, 600, @line-height: 24px);
+      color: @service-txt;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    &_description {
+      .font-style(14px, 300, @line-height: 17px);
+      text-align: center;
+      color: @service-txt;
+    }
+  }
+}
+
+@keyframes rotateServ {
+  0% {
+    transform: rotate(-45deg);
+  }
+
+  25% {
+    transform: rotate(-85deg);
+  }
+
+  50% {
+    transform: rotate(-135deg);
+  }
+
+  75% {
+    transform: rotate(-225deg);
+  }
+
+  90% {
+    transform: rotate(-300deg);
+  }
+
+  100% {
+    transform: rotate(-330deg);
+  }
+}
