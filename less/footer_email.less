@@ -4,10 +4,8 @@
   background-image: url("/img/subscribe_back.png");
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 87px;
-  padding-bottom: 150px;
   width: 100%;
-  background-size: 100%;
+  background-size: cover;
   position: relative;
   box-shadow: 0 0 0 270px rgb(255 255 255 / 33%) inset;
   margin-bottom: 0;
@@ -15,9 +13,11 @@
 
 .footer_email {
   display: flex;
+  justify-content: space-between;
+  padding-top: 87px;
+  padding-bottom: 150px;
 
   &_comment {
-    flex-grow: 1;
     text-align: center;
 
     &_txt {
@@ -33,9 +33,7 @@
   }
 
   &_subscribe {
-    flex-grow: 1;
-    width: 100%;
-    margin-left: 327px;
+
 
     &_header {
       .font-style(24px, bold, @line-height: 40px );
