@@ -33,7 +33,7 @@
 
       &_clear {
         max-width: 235px;
-        width: 1005px;
+        width: 100%;
         border: 1px solid @border-cart-btn;
         margin-right: 192px;
         text-transform: uppercase;
@@ -51,7 +51,7 @@
         width: 100%;
         border: 1px solid @border-cart-btn;
         text-transform: uppercase;
-        padding: 17px 0;
+        padding: 17px;
         text-align: center;
         box-sizing: border-box;
         .font-style(14px, 300, @line-height: 17px);
@@ -101,8 +101,7 @@
 
     & img {
       display: block;
-      height: 306px;
-      width: 262px;
+      .img-state(100%, 100%);
       margin: 0;
       padding: 0;
     }

@@ -137,7 +137,7 @@
     &_items {
       align-items: center;
 
-      &_action{
+      &_action {
         margin-bottom: 64px;
       }
     }
@@ -151,15 +151,44 @@
         display: flex;
       }
 
-      &_form{
+      &_form {
         flex-grow: 1;
         margin-right: 16px;
       }
 
-      &_subtotal{
+      &_subtotal {
         flex-grow: 1;
       }
     }
 
+  }
+
+  .registration {
+    padding: 0 17px;
+    box-sizing: border-box;
+    margin-top: 40px;
+
+    &_form {
+      margin-right: 22px;
+
+      &_input {
+        max-width: 360px;
+        width: 100%;
+      }
+
+    }
+
+    &_features {
+      padding-left: 30px;
+
+      &_title {
+        .font-style(16px, 300, normal, 19px);
+      }
+
+      &_txt {
+        .font-style(16px, 300, normal, 19px);
+        padding-top: 16px;
+      }
+    }
   }
 }
