@@ -1,0 +1,165 @@
+@import "_variables.less";
+
+
+@media @tablet {
+
+  .page_header {
+    &_left_part {
+      margin-left: 32px;
+    }
+
+    &_right_part {
+      margin-right: 32px;
+    }
+  }
+
+  .promo {
+    &_desc {
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
+
+    &_article {
+      padding: 100px;
+      background-size: cover;
+    }
+
+    &_adv_woman {
+      margin-right: 19px;
+    }
+
+    &_adv_man {
+      margin-right: 19px;
+    }
+
+    &_adv_title {
+      .font-style(16px, 400, @line-height: 19px);
+    }
+
+    &_adv_subtitle {
+      .font-style(24px, 700, @line-height: 29px);
+    }
+  }
+
+  .brand {
+    background-position-x: -200px;
+
+    &_description {
+      margin-right: 33px;
+
+      &_title {
+        .font-style(44px, 900, normal, 53px);
+      }
+
+      &_subtitle {
+        .font-style(24px, 700, normal, 29px);
+      }
+    }
+  }
+
+  .featured_header {
+    &_big {
+      .font-style(30px, normal, normal, 36px);
+    }
+  }
+
+  .description_txt {
+    .font-style(14px, normal, normal, 17px);
+  }
+
+  .featured_listing {
+    justify-content: center;
+
+    & li:nth-child(odd) {
+      margin-right: 16px !important;
+    }
+
+    & li:nth-child(3n+2) {
+      margin: 0;
+    }
+
+  }
+
+  .service_information {
+    flex-direction: column;
+    padding: 104px 204px 40px;
+
+    &_item {
+      margin: 0 0 48px;
+
+      &:nth-child(2) {
+        margin: 0 0 48px;
+      }
+    }
+
+    &_header {
+      .font-style(20px, normal, normal, 24px);
+    }
+
+    &_description {
+      .font-style(14px, 300, normal, 17px);
+      padding: 0 30px;
+    }
+  }
+
+  .footer_email {
+    flex-direction: column;
+    padding-bottom: 0;
+
+    &_comment {
+      margin: 0 auto 48px;
+    }
+
+    &_subscribe {
+      margin-bottom: 140px;
+    }
+  }
+
+  .social_media_row {
+    padding: 0 32px;
+  }
+
+  .page_breadcrumps_row {
+    padding: 0 16px;
+  }
+
+  .filter_sort {
+    margin-left: 16px;
+  }
+
+  .odd_last {
+    display: none;
+  }
+
+  .cart {
+    flex-direction: column;
+
+    &_items {
+      align-items: center;
+
+      &_action{
+        margin-bottom: 64px;
+      }
+    }
+
+    &_checkout {
+      max-width: 768px;
+      box-sizing: border-box;
+      padding: 0 16px;
+
+      &_tbl {
+        display: flex;
+      }
+
+      &_form{
+        flex-grow: 1;
+        margin-right: 16px;
+      }
+
+      &_subtotal{
+        flex-grow: 1;
+      }
+    }
+
+  }
+}
