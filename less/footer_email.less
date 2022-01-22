@@ -1,7 +1,7 @@
 @import "_variables.less";
 
 .email {
-  background-image: url("/img/subscribe_back.png");
+  background-image: url("../img/subscribe_back.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -54,7 +54,8 @@
   }
 
   &_subscription_add {
-    width: 356px;
+    max-width: 356px;
+    width: 100%;
     padding: 14px 80px 14px 22px;
     min-height: 20px;
     display: flex;
@@ -65,7 +66,8 @@
   &_subscribe_input {
     outline: none;
     -webkit-appearance: none;
-    width: 256px;
+    max-width: 256px;
+    width: 100%;
     vertical-align: middle;
     border: 1px solid #e1e1e1;
     box-sizing: border-box;

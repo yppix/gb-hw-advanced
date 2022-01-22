@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cart</title>
+    <title>Registration</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -150,95 +150,54 @@
     <section class="page_breadcrumps">
         <div class="center">
             <div class="page_breadcrumps_row">
-                <h2 class="page_breadcrumps_header">shopping cart</h2>
+                <h2 class="page_breadcrumps_header">registration</h2>
             </div>
         </div>
     </section>
-    <section class="featured">
+    <section class="registration_sec">
         <div class="center">
-            <div class="cart">
-                <div class="cart_items">
-                    <ul class="cart_items_listing">
-                        <li class="cart_items_listing_product">
-                            <article class="cart_product_item">
-                                <img src="img/8-item.jpg" alt="Толстовка" width="262" height="306">
-                                <div class="cart_product_description">
-                                    <h3 class="cart_product_title">mango people t-shirt</h3>
-                                    <div class="cart_items_parameters">
-                                        <div class="cart_items_parameters_description">
-                                            <p class="cart_parameter">price:</p>
-                                            <p class="cart_parameter_pricing">&#36;300</p>
-                                        </div>
-                                        <div class="cart_items_parameters_description">
-                                            <p class="cart_parameter">color:</p>
-                                            <p class="cart_parameter">red</p>
-                                        </div>
-                                        <div class="cart_items_parameters_description">
-                                            <p class="cart_parameter">size:</p>
-                                            <p class="cart_parameter">xl</p>
-                                        </div>
-                                        <div class="cart_items_parameters_description">
-                                            <p class="cart_parameter">quantity:</p>
-                                            <input type="number" value="2">
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="cart_items_listing_product">
-                            <article class="cart_product_item">
-                                <img src="img/7-item.jpg" alt="Рубашка" width="262" height="306">
-                                <div class="cart_product_description">
-                                    <h3 class="cart_product_title">mango people t-shirt</h3>
-                                    <div class="cart_items_parameters">
-                                        <div class="cart_items_parameters_description">
-                                            <p class="cart_parameter">price:</p>
-                                            <p class="cart_parameter_pricing">&#36;300</p>
-                                        </div>
-                                        <div class="cart_items_parameters_description">
-                                            <p class="cart_parameter">color:</p>
-                                            <p class="cart_parameter">red</p>
-                                        </div>
-                                        <div class="cart_items_parameters_description">
-                                            <p class="cart_parameter">size:</p>
-                                            <p class="cart_parameter">xl</p>
-                                        </div>
-                                        <div class="cart_items_parameters_description">
-                                            <p class="cart_parameter">quantity:</p>
-                                            <input type="number" value="2">
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </li>
-                    </ul>
-                    <div class="cart_items_action">
-                        <button class="cart_items_action_clear" formaction="#">clear shopping cart</button>
-                        <a href="catalog.html" class="cart_items_action_continue">continue shopping</a>
-                    </div>
-                </div>
-                <div class="cart_checkout">
-                    <h3 class="cart_checkout_header">shipping address</h3>
-                    <div class="cart_checkout_tbl">
-                        <form action="#" class="cart_checkout_form">
-                            <input type="text" placeholder="" value="Bangladesh">
-                            <input type="text" placeholder="State">
-                            <input type="text" placeholder="Postcode / Zip">
-                            <a href="catalog.html" class="cart_items_action_quote">get quote</a>
-                        </form>
-                        <div class="cart_checkout_subtotal">
-                            <div class="cart_checkout_subtotal_sub">
-                                <p class="sub_title">sub total</p>
-                                <p class="sub_title_price">&#36;900</p>
-                            </div>
-                            <div class="cart_checkout_subtotal_grand">
-                                <p class="grand_title">grand total</p>
-                                <p class="grand_title_price">&#36;900</p>
-                            </div>
-                            <a href="#" class="cart_checkout_subtotal_proceed">proceed to checkout</a>
-                        </div>
-                    </div>
+            <div class="registration">
+                <div class="cart_checkout_tbl">
+                    <form action="#" class="registration_form">
+                        <p class="registration_form_subtitle">your name</p>
+                        <input class="registration_form_input" type="text" placeholder="" value="First name">
+                        <input class="registration_form_input" type="text" placeholder="Last name">
+                        <div class="registration_radio_wrap">
+                            <input class="registration_form_radio" type="radio" id="genderChoice1"
+                                   name="gender" value="Male">
+                            <label for="genderChoice1">Male</label>
 
+                            <input class="registration_form_radio" type="radio" id="genderChoice2"
+                                   name="gender" value="Female">
+                            <label for="genderChoice2">Female</label>
+                        </div>
+                        <p class="registration_form_subtitle">login detail</p>
+                        <input class="registration_form_input" type="text" placeholder="" value="Email">
+                        <input class="registration_form_input" type="password" placeholder="Password">
+                        <p class="registration_form_txt">please use 8 or more characters, with at least 1 number
+                            and a mixture of uppercase and lowercase letters</p>
+                        <a href="catalog.html" class="registration_form_action">
+                            join now<i class="fas fa-arrow-right registration_button_arrow"></i>
+                        </a>
+                    </form>
+                </div>
+                <div class="registration_features">
+                    <h2 class="registration_features_title">loyalty has its perks</h2>
+                    <p class="registration_features_txt">
+                        Get in on the loyalty program where you can earn points and unlock
+                        serious perks. Starting
+                        with these as soon as you join:
+                        15% off welcome offer</p>
+                    <p class="registration_features_txt"><i class="fas fa-check registration_features_txt_arrow"></i>
+                        Free shipping, returns and
+                        exchanges on all orders</p>
+                    <p class="registration_features_txt"><i class="fas fa-check registration_features_txt_arrow"></i>
+                        &#36;10 off a purchase on your
+                        birthday</p>
+                    <p class="registration_features_txt"><i class="fas fa-check registration_features_txt_arrow"></i>
+                        Early access to products</p>
+                    <p class="registration_features_txt"><i class="fas fa-check registration_features_txt_arrow"></i>
+                        Exclusive offers & rewards</p>
                 </div>
             </div>
         </div>
